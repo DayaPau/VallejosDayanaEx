@@ -6,10 +6,13 @@
     xmlns:local="clr-namespace:VallejosDayanaEx"
     Shell.FlyoutBehavior="Disabled"
     Title="VallejosDayanaEx">
-
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <Tab Title="Página 1" Icon="icon1.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Page1}" />
+        </Tab>
+        <Tab Title="Página 2" Icon="icon2.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Page2}" />
+        </Tab>
+    </TabBar>
 
 </Shell>

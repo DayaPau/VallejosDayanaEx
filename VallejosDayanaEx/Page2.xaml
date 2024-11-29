@@ -3,22 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="VallejosDayanaEx.Page2"
              Title="Page2">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="Auto" />
-        </Grid.ColumnDefinitions>
+    <Grid RowDefinitions="*,*"
+          ColumnDefinitions="*,*">
 
-        <Label Text="Dayana" Grid.Row="0" Grid.Column="0" />
-        <Label Text="Paulette" Grid.Row="0" Grid.Column="1" />
-        <Label Text="Vallejos" Grid.Row="1" Grid.Column="0" 
-               Style="{DynamicResource ApellidoLabelStyle}" />
-        <Label Text="Casanova" Grid.Row="1" Grid.Column="1" 
-               Style="{DynamicResource ApellidoLabelStyle}" />
+        <Label Text="Dayana"
+               Grid.Row="0" Grid.Column="0"
+               HorizontalOptions="Center" VerticalOptions="Center" />
+
+        <Label Text="Paulette"
+               Grid.Row="0" Grid.Column="1"
+               HorizontalOptions="Center" VerticalOptions="Center" />
+
+        <Label Text="Vallejos"
+               Grid.Row="1" Grid.Column="0"
+               Style="{DynamicResource ApellidoStyle}"
+               HorizontalOptions="Center" VerticalOptions="Center" />
+
+        <Label Text="Casanova"
+               Grid.Row="1" Grid.Column="1"
+               Style="{DynamicResource ApellidoStyle}"
+               HorizontalOptions="Center" VerticalOptions="Center" />
+
     </Grid>
+    
 </ContentPage>
