@@ -4,6 +4,7 @@
              x:Class="VallejosDayanaEx.MainPage">
 
     <StackLayout Padding="20">
+        
         <Label Text="Página Principal" FontSize="24" HorizontalOptions="Center" />
 
 

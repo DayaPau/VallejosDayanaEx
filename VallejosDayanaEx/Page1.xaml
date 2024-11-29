@@ -5,7 +5,7 @@
              Title="Page1">
     <StackLayout Padding="20">
 
-        <Label x:Name="DayanaVallejos" Text="D. V." FontSize="24" HorizontalOptions="Center" />
+        <Label x:Name="DayanaVallejos_label" Text="D. V." FontSize="24" HorizontalOptions="Center" />
 
         <Entry x:Name="nameEntry" Placeholder="Nombre" />
 
@@ -15,7 +15,9 @@
 
 
 
-        <Label Text="Última Recarga: " FontSize="18" HorizontalOptions="Center" />
+        <Label Text="Última Recarga: "
+               x:Name="dVallejos_lastRecargaLabel" 
+               FontSize="18" HorizontalOptions="Center" />
         <Label Text="{Binding LastRecarga}" 
                FontSize="16" 
                HorizontalOptions="Center"
