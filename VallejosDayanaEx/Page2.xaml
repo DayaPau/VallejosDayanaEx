@@ -3,10 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="VallejosDayanaEx.Page2"
              Title="Page2">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Dayana" Grid.Row="0" Grid.Column="0" />
+        <Label Text="Paulette" Grid.Row="0" Grid.Column="1" />
+        <Label Text="Vallejos" Grid.Row="1" Grid.Column="0" 
+               Style="{DynamicResource ApellidoLabelStyle}" />
+        <Label Text="Casanova" Grid.Row="1" Grid.Column="1" 
+               Style="{DynamicResource ApellidoLabelStyle}" />
+    </Grid>
 </ContentPage>
